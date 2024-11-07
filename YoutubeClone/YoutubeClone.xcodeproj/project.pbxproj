@@ -29,6 +29,12 @@
 		81CA2E882CD83A4D00E07150 /* PlaylistItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA2E872CD83A4D00E07150 /* PlaylistItemModel.swift */; };
 		81CA2E8A2CD83A7E00E07150 /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA2E892CD83A7E00E07150 /* PlaylistModel.swift */; };
 		81CA2E8C2CD83AA700E07150 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA2E8B2CD83AA700E07150 /* VideoModel.swift */; };
+		81ED97E22CDC6188003DA8CD /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ED97E12CDC6188003DA8CD /* ServiceLayer.swift */; };
+		81ED97E42CDC61B4003DA8CD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ED97E32CDC61B4003DA8CD /* NetworkError.swift */; };
+		81ED97E62CDC61D8003DA8CD /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ED97E52CDC61D8003DA8CD /* RequestModel.swift */; };
+		81ED97E92CDC622E003DA8CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ED97E82CDC622E003DA8CD /* Constants.swift */; };
+		81ED97EF2CDC6ABE003DA8CD /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ED97EE2CDC6ABE003DA8CD /* HomeProvider.swift */; };
+		81ED97F12CDC6CDF003DA8CD /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ED97F02CDC6CDF003DA8CD /* HomePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +61,12 @@
 		81CA2E872CD83A4D00E07150 /* PlaylistItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemModel.swift; sourceTree = "<group>"; };
 		81CA2E892CD83A7E00E07150 /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
 		81CA2E8B2CD83AA700E07150 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		81ED97E12CDC6188003DA8CD /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		81ED97E32CDC61B4003DA8CD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		81ED97E52CDC61D8003DA8CD /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		81ED97E82CDC622E003DA8CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		81ED97EE2CDC6ABE003DA8CD /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
+		81ED97F02CDC6CDF003DA8CD /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		81F67DC32CA9ED2E00F29771 /* YoutubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,8 +93,9 @@
 		81664F932CDB0873002D21A2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				81664F942CDB08FC002D21A2 /* HomeViewController.swift */,
-				81664F952CDB08FC002D21A2 /* HomeViewController.xib */,
+				81ED97EC2CDC6A8E003DA8CD /* Presenter */,
+				81ED97EB2CDC6A88003DA8CD /* View */,
+				81ED97EA2CDC6A7A003DA8CD /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -126,6 +139,8 @@
 		81CA2E7C2CD839DD00E07150 /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				81ED97E72CDC6222003DA8CD /* Utils */,
+				81ED97E02CDC613B003DA8CD /* ServiceLayer */,
 				81664FA72CDB0962002D21A2 /* About */,
 				81664FA22CDB094F002D21A2 /* Channels */,
 				81664F9D2CDB0929002D21A2 /* Playlist */,
@@ -153,6 +168,57 @@
 				81CA2E8B2CD83AA700E07150 /* VideoModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		81ED97E02CDC613B003DA8CD /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				81ED97E12CDC6188003DA8CD /* ServiceLayer.swift */,
+				81ED97E32CDC61B4003DA8CD /* NetworkError.swift */,
+				81ED97E52CDC61D8003DA8CD /* RequestModel.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		81ED97E72CDC6222003DA8CD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				81ED97E82CDC622E003DA8CD /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		81ED97EA2CDC6A7A003DA8CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81ED97ED2CDC6AA7003DA8CD /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81ED97EB2CDC6A88003DA8CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81664F942CDB08FC002D21A2 /* HomeViewController.swift */,
+				81664F952CDB08FC002D21A2 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81ED97EC2CDC6A8E003DA8CD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				81ED97F02CDC6CDF003DA8CD /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		81ED97ED2CDC6AA7003DA8CD /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				81ED97EE2CDC6ABE003DA8CD /* HomeProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		81F67DBA2CA9ED2E00F29771 = {
@@ -251,19 +317,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				81CA2E7D2CD839DD00E07150 /* AppDelegate.swift in Sources */,
+				81ED97E42CDC61B4003DA8CD /* NetworkError.swift in Sources */,
 				81CA2E8A2CD83A7E00E07150 /* PlaylistModel.swift in Sources */,
+				81ED97F12CDC6CDF003DA8CD /* HomePresenter.swift in Sources */,
 				81664F9C2CDB0925002D21A2 /* VideosViewController.swift in Sources */,
 				81CA2E7E2CD839DD00E07150 /* SceneDelegate.swift in Sources */,
 				81CA2E8C2CD83AA700E07150 /* VideoModel.swift in Sources */,
+				81ED97E62CDC61D8003DA8CD /* RequestModel.swift in Sources */,
 				81664FA52CDB095B002D21A2 /* ChannelViewController.swift in Sources */,
 				81CA2E7F2CD839DD00E07150 /* ViewController.swift in Sources */,
 				81664F962CDB08FC002D21A2 /* HomeViewController.swift in Sources */,
 				81CA2E882CD83A4D00E07150 /* PlaylistItemModel.swift in Sources */,
+				81ED97EF2CDC6ABE003DA8CD /* HomeProvider.swift in Sources */,
 				81664FA12CDB093D002D21A2 /* PlaylistViewController.swift in Sources */,
+				81ED97E22CDC6188003DA8CD /* ServiceLayer.swift in Sources */,
 				81664FAB2CDB096E002D21A2 /* AboutViewController.swift in Sources */,
 				81664F922CDB07C2002D21A2 /* MainViewController.swift in Sources */,
 				81CA2E862CD83A1500E07150 /* ChannelModel.swift in Sources */,
 				81664F902CDB07A6002D21A2 /* RootPageViewController.swift in Sources */,
+				81ED97E92CDC622E003DA8CD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
