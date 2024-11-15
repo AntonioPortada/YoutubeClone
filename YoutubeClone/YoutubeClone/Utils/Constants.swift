@@ -7,5 +7,6 @@
 
 import Foundation
 struct Constants {
-    static let apiKey = "AIzaSyD"
+    static let apiKey = "AIzaSyAXwQxbOcnwBIQ4HCzrF4lUUtJlyhIC9_I"
+    static let channelId = "UC"
 }

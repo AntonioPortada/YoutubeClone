@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct PlaylistItemsModel: Decodable{
     let kind: String
     let etag: String
